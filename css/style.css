@@ -1,0 +1,862 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.4)), url("../image/bg-1.jpg") no-repeat;
+    height: 550px;
+    text-align: center;
+    background-size: cover;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.logo {
+    color: white;
+    font-family: 'Yesteryear', cursive;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.nav-menu {
+    list-style: none;
+    color: white;
+
+}
+
+.nav-menu li {
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover {
+    color: #F2AC32;
+}
+
+.header-title-1 {
+    color: #F2AC32;
+    font-size: 35px;
+    font-family: 'Rochester', cursive;
+    margin-top: 150px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+.header-title-2 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+
+.header-cta-button {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 7px 26px;
+    border: 2px solid white;
+    transition: all 0.4s ease-in-out;
+    background-color: transparent;
+
+
+
+}
+
+.header-cta-button:hover {
+    background-color: rgba(211, 148, 37, 0.92);
+    border: transparent;
+}
+
+.search {
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: text 3s ease-in-out;
+}
+
+.my-bag {
+    font-size: 22px;
+    transition: text 3s ease-in-out;
+}
+
+.search:hover {
+    color: #F2AC32;
+}
+
+.my-bag:hover {
+    color: #F2AC32;
+}
+
+/******************discover section***********************/
+
+.discover-section {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+
+}
+
+.food-item {
+
+    height: 360px;
+    width: 230px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+
+.food-border {
+    border: 2px solid #F2AC32;
+    position: relative;
+}
+
+.food-overlay {
+    text-align: center;
+    background-color: white;
+    padding-top: 50px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 15px;
+    right: 15px;
+    -webkit-box-shadow: -8px 8px 22px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px 8px 22px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 8px 22px -8px rgba(0, 0, 0, 0.75);
+}
+
+.food-item p {
+    color: #6d6d6d;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.food-item a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: #F2AC32;
+    font-weight: 100;
+
+
+}
+
+.food-1 {
+    background: url("../image/burger.jpg") no-repeat;
+    background-size: cover;
+    margin-top: -40px;
+    -webkit-box-shadow: -8px 8px 22px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px 8px 22px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 8px 22px -8px rgba(0, 0, 0, 0.75);
+}
+
+.food-2 {
+    background: url("../image/toast.jpg") no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: -8px 8px 22px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px 8px 22px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 8px 22px -8px rgba(0, 0, 0, 0.75);
+
+    position: relative;
+}
+
+.discover-h1 {
+    font-family: 'Rochester', cursive;
+    color: #F2AC32;
+    margin-bottom: 5px;
+    font-weight: 100;
+
+}
+
+.discover-h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+.food-overlay-hover-border {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 10px;
+    text-align: center;
+}
+
+.food-overlay-hover {
+
+    padding: 30px;
+    border: 2px solid #F2AC32;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.food-overlay-hover-border:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+/*  START SPECIALITITES SECTION*/
+
+
+.specialities-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.9)), url("../image/specialities-bg.jpg") no-repeat;
+    /*    background-size: cover;*/
+    padding-top: 160px;
+    padding-bottom: 250px;
+    /*    height: 900px;*/
+    position: relative;
+    background-size: cover;
+
+}
+
+.specialities-h1 {
+    font-family: 'Rochester', cursive;
+    color: #F2AC32;
+    margin-bottom: 7px;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.specialities-h2 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+}
+
+.specialities-middle {
+    text-align: center;
+}
+
+.specialities-row {
+    display: flex;
+    justify-content: center;
+}
+
+.specialities-col {
+    width: 250px;
+    height: 180px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.specialities-image1,
+.specialities-image2,
+.specialities-image3 {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.specialities-image1 {
+    background: url("../image/soup.jpg");
+    background-size: cover;
+}
+
+.specialities-image1:hover .specialities-overlay,
+.specialities-image2:hover .specialities-overlay,
+.specialities-image3:hover .specialities-overlay {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.specialities-image2 {
+    background: url("../image/bg.jpg");
+    background-size: cover;
+}
+
+.specialities-image3 {
+    background: url("../image/steak.jpg");
+    background-size: cover;
+}
+
+.specialities-h3 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.specialities-overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 174, 49, 0.5);
+    position: absolute;
+    padding: 10px;
+}
+
+.specialities-overlay-border {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Skewed Design Or Razor Blade Design */
+
+.specialities-top {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0 0 70px 1328px;
+    /*top right bottom left*/
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+
+}
+
+.specialities-bottom {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 70px 1349px;
+    /*top right bottom left*/
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+
+}
+
+/************************************************special menu section***********************************************/
+
+.special-menu-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.special-menu-h1 {
+    font-family: 'Rochester', cursive;
+    color: #F2AC32;
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+.special-menu-h2 {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-weight: 100;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+}
+
+.special-menu-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.special-menu-col {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap
+}
+
+.col-large {
+    width: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.col-large-1,
+.col-large-3 {
+    background-color: #F2AC32;
+    color: white;
+    justify-content: center;
+}
+
+.fa-ice-cream,
+.fa-utensils {
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.special-menu-h3 {
+    width: 100%;
+    font-family: 'Rochester', cursive;
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.separator {
+    display: inline-block;
+    width: 60px;
+    border-bottom: 2px solid white;
+    margin: 22px auto;
+}
+
+.special-menu-h4 {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+
+.special-menu-p {
+    padding: 30px 20px;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    font-weight: 100;
+}
+
+.col-large-2 {
+    background: url('../image/burger.jpg');
+    background-size: cover;
+}
+
+.col-large-4 {
+    background: url('../image/chicken.jpg');
+    background-size: cover;
+}
+
+.col-small {
+    height: 225px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.col-small-1 {
+    background-color: white;
+    /*    border: 2px solid black;*/
+    justify-content: center;
+}
+
+.special-menu-small-h3 {
+    width: 100%;
+    font-family: 'Rochester', cursive;
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-weight: 100;
+    color: #F2AC32;
+    /*    margin-bottom: 10px;*/
+}
+
+.special-menu-small-h4 {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #F2AC32;
+    margin-top: 7px;
+}
+
+.fa-hamburger {
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 7px;
+    color: #F2AC32;
+}
+
+.separator-small {
+    width: 40px;
+    display: inline-block;
+    border-bottom: 2px solid #F2AC32;
+    margin: 15px auto;
+}
+
+.col-small-2 {
+    background: url('../image/specialities-bg.jpg');
+    background-size: cover;
+}
+
+.col-small-3 {
+    background: url('../image/bg.jpg');
+    background-size: cover;
+}
+
+/************************************************Discover Section ***********************************************/
+.discover-menu-section {
+    padding: 40px;
+    margin-top: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.9)),
+        url(../image/discover-bg.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 100px 30px;
+}
+
+.discover-menu-heading-h2 {
+    font-family: 'Rochester', cursive;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 100;
+    color: #F2AC32;
+}
+
+.discover-menu-heading-h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.menu-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.left-menu {
+    width: 50%;
+    margin-left: 75px;
+}
+
+.right-menu {
+    width: 50%;
+    /*    margin-left: 30px;*/
+}
+
+.menu-item {
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.sub-item-name {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: white;
+    margin-top: -10px;
+}
+
+.item-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.amount {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #F2AC32;
+    margin-left: 15px;
+
+}
+
+.item-border {
+    display: inline-block;
+    width: 200px;
+    border-bottom: 1px solid white;
+    margin-left: 60px;
+    margin-bottom: 10px;
+
+}
+
+.discover-menu-button {
+    text-decoration: none;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    padding: 10px 30px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.discover-menu-button:hover {
+    background-color: rgb(242, 172, 50, 0.9);
+    padding: 10px 20px;
+}
+
+/************************************************Resservation Section ***********************************************/
+
+.resservation-section {
+    background-color: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.resservation-heading-h2 {
+    font-family: 'Rochester', cursive;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 100;
+    color: #F2AC32;
+    margin-bottom: 30px;
+}
+
+.resservation-heading-h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2a2a2a;
+}
+
+.resservation-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px 20px auto;
+}
+
+.resservation-col {
+    padding: 0px 50px;
+}
+
+.fa-calendar-alt,
+.fa-user,
+.fa-clock {
+    font-size: 16px;
+    font-weight: 100;
+    color: #333;
+}
+
+.calender {
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #333;
+    border-left: 1px solid rgb(51, 51, 51, 0.2);
+    border-top: 1px solid rgb(51, 51, 51, 0.2);
+    margin-left: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.combo-box,
+.people-combo-box {
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #333;
+    border-left: 1px solid rgb(51, 51, 51, 0.2);
+    border-top: 1px solid rgb(51, 51, 51, 0.2);
+    margin-left: 10px;
+    padding: 10px;
+    padding-right: 98px;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+
+
+.resservation-button {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+    padding: 10px 30px;
+    background-color: #f2ad32;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.resservation-button:hover {
+    background-color: #ba7700;
+}
+
+/************************************************Footer Section ***********************************************/
+.footer-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)), url('../image/footer.jpg');
+    background-size: cover;
+    /*    height: 550px;*/
+    background-position: center center;
+    margin-top: 100px;
+}
+
+.footer-row {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-heading-h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+    color: #F2AC32;
+}
+
+.footer-h6,
+.social-text li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+    padding: 5px 0px;
+}
+
+.footer-social-text {
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-social-text:hover {
+    color: #F2AC32;
+}
+
+.social-text {
+    list-style-type: none;
+}
+
+.footer-social-text {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-email {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    color: #a5a5a5;
+    border: none;
+}
+
+.footer-email::placeholder {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    color: #a5a5a5;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.footer-button {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    width: 250px;
+    height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+    padding: 10px 30px;
+    background-color: #f2ad32;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.footer-button:hover {
+    background-color: #ba7700;
+}
+
+/************************************************copyright Section ***********************************************/
+.footer-copyright-section{
+    text-align: center;
+    border-top: 1px solid #6c6c6c;
+}
+.copyright{
+    padding: 50px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    color: #b9b9b9;
+}
+
+.span-footer{
+    color: #f2ad32;
+    transition: all 0.3s ease-in-out;
+}
+
+.span-footer:hover{
+    color: #ba7700;
+}
